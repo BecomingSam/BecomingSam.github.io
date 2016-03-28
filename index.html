@@ -22,6 +22,8 @@
 		
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 		
+		
+		<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 		<!-- Fontawesome Icon font -->
         <link rel="stylesheet" href="css/font-awesome.min.css">
 		<!-- bootstrap.min -->
@@ -36,6 +38,9 @@
         <link rel="stylesheet" href="css/animate.css">
 		<!-- Main Stylesheet -->
         <link rel="stylesheet" href="css/main.css">
+
+        <link rel="stylesheet" href="css/peacocks.css">
+
 
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/modernizr-2.6.2.min.js"></script>
@@ -123,8 +128,8 @@
 						<div class="bg-img bg-img-2"></div>
 						<div class="slide-caption">
                             <div class="caption-content">
-                                <h2>Insurance Option for Anything You Sell</h2>
-                                <span>Marketplace, storefront or even P2P lending platform, ZINC has something that fits your need</span>
+                                <h2>Insure What You Sell</h2>
+                                <span>ZINC is made to fit your ecommerce site, big or small</span>
                                 <a href="#" class="btn btn-blue btn-effect">Sign Up for Email Updates</a>
                             </div>
                         </div>
@@ -137,7 +142,7 @@
 						<div class="slide-caption">
                             <div class="caption-content">
                                 <h2>Built For Developers </h2>
-                                <span>A set of clean APIs and online tools that enable online retailers, big and small, to manage insurance instantly</span>
+                                <span>Clean APIs and robust online tools let you get started instantly</span>
                                 <a href="#" class="btn btn-blue btn-effect">Sign Up for Email Updates</a>
                             </div>
                         </div>
@@ -200,7 +205,7 @@
 							<div class="welcome-block">
 								<h3>Coming Soon</h3>								
 						     	 <div class="message-body">
-									<img src="img/member-1.jpg" class="pull-left" alt="member">
+									<img src="img/calendar.png" class="pull-left" alt="member">
 						       		<p>Zinc Platform is launching in Fall 2016. Join our email list to subscribe to early access.</p>
 						     	 </div>
 						       	<a href="#" class="btn btn-border btn-effect pull-right">Sign Up for Email Updates</a>
@@ -225,7 +230,7 @@
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
 							<div class="service-item">
 								<div class="service-icon">
-									<i class="fa fa-home fa-3x"></i>
+									<i class="fa fa-flag fa-3x"></i>
 								</div>
 								<h3>White-Labeled Claims Management</h3>
 								<p>Provide a full customizable claims portal to your customers that allows them file claims, retrieve receipts, coordinate servicing or get payments. Zinc can also integrate into your support framework or third-party customer service platforms like ZenDesk to provide a high-touch experience at low-cost. </p>
@@ -235,7 +240,7 @@
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
 							<div class="service-item">
 								<div class="service-icon">
-									<i class="fa fa-tasks fa-3x"></i>
+									<i class="fa fa-check-square fa-3x"></i>
 								</div>
 								<h3>Formation and Compliance</h3>
 								<p>Zinc taps into a network of warranty and protection insurance providers to work with key stakeholders and regulating bodies to quickly form a warranty or protection plan that works. Zinc communicates with banks, insurers and service providers to get your plan up and running as quickly as possible. </p>
@@ -245,7 +250,7 @@
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
 							<div class="service-item">
 								<div class="service-icon">
-									<i class="fa fa-clock-o fa-3x"></i>
+									<i class="fa fa-support fa-3x"></i>
 								</div>
 								<h3>Online Sales + Offline Repairs</h3>
 								<p>Tap into local repair and service providers to allow your consumers to get on-demand servicing they need without the paperwork and hassle they hate. Zinc can also integrate into your own service network and help you eliminate paperwork and duplicative data entry. </p>
@@ -255,7 +260,7 @@
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
 							<div class="service-item">
 								<div class="service-icon">
-									<i class="fa fa-heart fa-3x"></i>
+									<i class="fa fa-sort-amount-desc fa-3x"></i>
 								</div>
 								
 								<h3>Powerful Data Analytics Tools</h3>
@@ -279,10 +284,19 @@
 								<p>Integrate ZINC in hours, not days</p>
 							</div>
 							
-							<div id="testimonial" class=" wow animated fadeInUp">
+							<div id="testimonial" class=" wow animated fadeInUp" style="width: 50%; float: left;" >
 							No need to design enrollment forms from scratch. Zinc offers a dynamic in-line checkout insert that displays pricing and options in a simple, beautiful and intuitive way. Zinc integrates with your existing payments and checkout framework to seamless enroll your customers, collect payment and distribute the merchants commission share. Zinc will host the claims portal and allow you customize the look and feel to align with your brand while integrating with your support system. Zinc will store transaction details in a secure manner – freeing you from having to manage transaction data across platforms. Mobile. Online. In app. Zinc allows you to deploy an “insure it” button wherever you allow checkout. 	
 							</div>
-					</div>
+							<div  style="width: 45%; float: right; ">
+								<pre class="prettyprint theme-peacocks-in-space">
+									curl -X POST https://api.zincplatform.com/connect \<br/>				
+									-d client_id=test_id \<br/>								
+									-d passcode=test_passcode \<br/>						
+									-d item_id=my_item_id \<br/>							
+									-d price=99.99 \
+								</pre>
+							</div>
+						</div>
 				</div>
 			</section>
 			<!-- end Developer section -->
@@ -416,6 +430,7 @@
 			<!-- end portfolio section -->
 			
 			<!-- Testimonial section -->
+			<!--
 			<section id="testimonials" class="parallax">
 				<div class="overlay">
 					<div class="container">
@@ -453,9 +468,11 @@
 					</div>
 				</div>
 			</section>
+			-->
 			<!-- end Testimonial section -->
 			
 			<!-- Price section -->
+			<!--
 			<section id="price">
 				<div class="container">
 					<div class="row">
@@ -522,9 +539,11 @@
 					</div>
 				</div>
 			</section>
+			-->
 			<!-- end Price section -->
 			
 			<!-- Social section -->
+			<!--
 			<section id="social" class="parallax">
 				<div class="overlay">
 					<div class="container">
@@ -545,6 +564,7 @@
 					</div>
 				</div>
 			</section>
+			-->
 			<!-- end Social section -->
 			
 			<!-- Contact section -->
@@ -579,9 +599,9 @@
 						<div class="col-md-5 wow animated fadeInRight">
 							<address class="contact-details">
 								<h3>Contact Us</h3>						
-								<p><i class="fa fa-pencil"></i>Phoenix Inc.<span>PO Box 345678</span> <span>Little Lonsdale St, Melbourne </span><span>Australia</span></p><br>
-								<p><i class="fa fa-phone"></i>Phone: (415) 124-5678 </p>
-								<p><i class="fa fa-envelope"></i>website@yourname.com</p>
+								<!--<p><i class="fa fa-pencil"></i>Phoenix Inc.<span>PO Box 345678</span> <span>Little Lonsdale St, Melbourne </span><span>Australia</span></p><br>-->
+								<p><i class="fa fa-phone"></i>Phone: (434) 249-1455 </p>
+								<p><i class="fa fa-envelope"></i>hello@zincplatform.com</p>
 							</address>
 						</div>
 			
@@ -589,13 +609,13 @@
 				</div>
 			</section>
 			<!-- end Contact section -->
-			
+			<!--
 			<section id="google-map">
 				<div id="map-canvas" class="wow animated fadeInUp"></div>
 			</section>
-		
+			-->
 		</main>
-		
+		<!--
 		<footer id="footer">
 			<div class="container">
 				<div class="row text-center">
@@ -627,7 +647,7 @@
 				</div>
 			</div>
 		</footer>
-		
+		-->
 		<!-- Essential jQuery Plugins
 		================================================== -->
 		<!-- Main jQuery -->
