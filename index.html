@@ -74,7 +74,7 @@
 					
 					<!-- logo -->
 					<h1 class="navbar-brand">
-						<img src="img/logo_zinc.png" height="80" style="padding:0px 5px 15px 15px">
+						<img src="img/logo_zinc_corpped.png" height="30">
 					</h1>
 					<!-- /logo -->
                 </div>
@@ -224,7 +224,7 @@
 					
 						<div class="sec-title text-center">
 							<h2 class="wow animated bounceInLeft">For Merchants</h2>
-							<p class="wow animated bounceInRight">Online Retailers, big and small</p>
+							<p class="wow animated bounceInRight">Provide Incredible Customer Experiences, Earn Incremental Revenue</p>
 						</div>
 						
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
@@ -281,19 +281,25 @@
 						
 							<div class="sec-title text-center white wow animated fadeInDown">
 								<h2>For Developers</h2>
-								<p>Integrate ZINC in hours, not days</p>
+								<p>The Whole Insurance Stack, Made Easy for Developers</p>
 							</div>
 							
 							<div id="testimonial" class=" wow animated fadeInUp" style="width: 50%; float: left;" >
-							No need to design enrollment forms from scratch. Zinc offers a dynamic in-line checkout insert that displays pricing and options in a simple, beautiful and intuitive way. Zinc integrates with your existing payments and checkout framework to seamless enroll your customers, collect payment and distribute the merchants commission share. Zinc will host the claims portal and allow you customize the look and feel to align with your brand while integrating with your support system. Zinc will store transaction details in a secure manner – freeing you from having to manage transaction data across platforms. Mobile. Online. In app. Zinc allows you to deploy an “insure it” button wherever you allow checkout. 	
+							Clean API tools that allow developers to quickly deploy the infrastructure behind providing elegant insurance experiences for consumers. Dynamic in-line “insure it” buttons at checkout with complete control on how pricing and options are displayed. Zinc integrates with your existing payments, support and checkout  frameworks to seamlessly enroll  your customers for warranty and protection insurance. 
+							<br>
+							Scalable and orthogonal APIs that connect to a fully customizable claims platform that  grows with your business. Beautiful interfaces and abstractions to help you manage receipts, policy renewals, insurance claims files, repair orders, payments to service providers and regulatory reports.  Designed with the growing business in mind, Zinc provides native iOS and Android to provide insurance on the go.
+ 	
 							</div>
 							<div  style="width: 45%; float: right; ">
 								<pre class="prettyprint theme-peacocks-in-space">
-									curl -X POST https://api.zincplatform.com/connect \<br/>				
-									-d client_id=test_id \<br/>								
-									-d passcode=test_passcode \<br/>						
-									-d item_id=my_item_id \<br/>							
+									curl -X POST https://api.zincplatform.com/connect \			
+									-d client_id=test_id \
+									-d passcode=123454321 \
+									-d item_sku=ZG011AQA \
 									-d price=99.99 \
+									-d currency=USD \
+									-d product_description="Small Silver Pendant" \
+									-d policy-type=accidental_damage \
 								</pre>
 							</div>
 						</div>
@@ -310,8 +316,17 @@
 					
 						<div class="sec-title text-center">
 							<h2 class="wow animated bounceInLeft">For Consumers</h2>
-							<p class="wow animated bounceInRight">Buy insurance for your imporant purchases</p>
+							<p class="wow animated bounceInRight">Protect and Fix the Things You Love</p>
 						</div>
+						<div id="testimonial" class=" wow animated fadeInUp" style="width: 50%; float: right;" >
+							Clean API tools that allow developers to quickly deploy the infrastructure behind providing elegant insurance experiences for consumers. Dynamic in-line “insure it” buttons at checkout with complete control on how pricing and options are displayed. Zinc integrates with your existing payments, support and checkout  frameworks to seamlessly enroll  your customers for warranty and protection insurance. 
+							<br>
+							Scalable and orthogonal APIs that connect to a fully customizable claims platform that  grows with your business. Beautiful interfaces and abstractions to help you manage receipts, policy renewals, insurance claims files, repair orders, payments to service providers and regulatory reports.  Designed with the growing business in mind, Zinc provides native iOS and Android to provide insurance on the go.
+ 	
+							</div>
+							<div  style="width: 45%; float: left; ">
+								<img src="img/consumer_goods.png" style="width: 100%">
+							</div>
 					</div>
 				</div>
 			</section>
@@ -328,8 +343,11 @@
 								<p>Onboard ZINC and get more customers</p>
 							</div>
 							
-							<div id="testimonial" class=" wow animated fadeInUp">
-							
+							<div id="testimonial" class=" wow animated fadeInDown" style="width: 50%; float: left;" >
+							Zinc powers the warranty and protection insurance plans of a growing number of online merchants. Register as a Zinc Authorized Service Provider, and get a flow of customer engagements – without the hassle. Zinc pays you direct, handles the claims process (including coverage verification) and helps you manage bookings from some of the webs’ leading online merchants. Use Zinc’s service provider-side portal and get a single point of access to a network of retailers and merchants looking to provide you repair  and servicing business. Build relationships with merchants, strike partnerships with retailers and grow your business – Zinc empowers you to reach new heights.
+							</div>
+							<div  style="width: 45%; float: right; ">
+								<img src="img/service_provider.png" style="width: 80%">
 							</div>
 					</div>
 				</div>
@@ -574,37 +592,10 @@
 						
 						<div class="sec-title text-center wow animated fadeInDown">
 							<h2>Contact</h2>
-							<p>Leave a Message</p>
-						</div>
-						
-						
-						<div class="col-md-7 contact-form wow animated fadeInLeft">
-							<form action="#" method="post">
-								<div class="input-field">
-									<input type="text" name="name" class="form-control" placeholder="Your Name...">
-								</div>
-								<div class="input-field">
-									<input type="email" name="email" class="form-control" placeholder="Your Email...">
-								</div>
-								<div class="input-field">
-									<input type="text" name="subject" class="form-control" placeholder="Subject...">
-								</div>
-								<div class="input-field">
-									<textarea name="message" class="form-control" placeholder="Messages..."></textarea>
-								</div>
-						       	<button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
-							</form>
-						</div>
-						
-						<div class="col-md-5 wow animated fadeInRight">
-							<address class="contact-details">
-								<h3>Contact Us</h3>						
 								<!--<p><i class="fa fa-pencil"></i>Phoenix Inc.<span>PO Box 345678</span> <span>Little Lonsdale St, Melbourne </span><span>Australia</span></p><br>-->
-								<p><i class="fa fa-phone"></i>Phone: (434) 249-1455 </p>
-								<p><i class="fa fa-envelope"></i>hello@zincplatform.com</p>
-							</address>
+								<p><i class="fa fa-phone"></i> Phone: (434) 249-1455 </p>
+								<p><i class="fa fa-envelope"></i> hello@zincplatform.com</p>
 						</div>
-			
 					</div>
 				</div>
 			</section>
