@@ -155,7 +155,11 @@
 }
 
 .bg-img-1 {
-	background-image: url(../img/slider/red_bkg.jpg);
+	 background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/slider/geometric_bkg.jpg);
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .bg-img-2 {
 	background-image: url(../img/slider/geometric_bkg_2.jpg);
